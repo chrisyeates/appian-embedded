@@ -31,8 +31,16 @@
 		 recordViewTag.setAttribute('recordTypeUrlStub', "QtRBJg");
 		 recordViewTag.setAttribute('recordIdentifier', sid);
 		 recordViewTag.setAttribute('recordViewUrlStub', "summary");
+		
+		<!-- container.appendChild(recordViewTag); -->
+		
+		var recordActionTag = document.createElement('appian-related-action');
+		 recordViewTag.setAttribute('recordTypeUrlStub', "QtRBJg");
+		 recordViewTag.setAttribute('recordIdentifier', sid);
+		 recordViewTag.setAttribute('processModelUuid', "af4eb356-b426-4dcb-be78-49d29343bbef");
+		container.appendChild(recordActionTag);
 		 
-		 container.appendChild(recordViewTag);
+		 
 	 
 	 </script>
 
