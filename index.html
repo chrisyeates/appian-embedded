@@ -5,6 +5,7 @@
      <script src="https://infinityglobal-dev.appiancloud.com/suite/tempo/ui/sail-client/embeddedBootstrap.nocache.js" id="appianEmbedded"></script>
 	 <div id="embeddedDiv"></div>
 	 <script>
+		var container = document.getElementById('embeddedDiv');		
 		const queryString = window.location.search;
 		console.log(queryString);
 		
@@ -28,7 +29,6 @@
 	 </script>
   </head>
   <body>
-	<div id="embeddedDiv"></div>
 	<p>Appian embedded POC</p>
 	<p> </p>
     <!-- This custom HTML element specifies an Appian report to embed on the HTML page -->
