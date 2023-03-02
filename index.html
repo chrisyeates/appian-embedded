@@ -11,11 +11,18 @@
 		const urlParams = new URLSearchParams(queryString);
 		const sid = urlParams.get('sid')
 		console.log(sid);
+		
+		let recordStart = "https://infinityglobal-dev.appiancloud.com/suite/tempo/records/item/";
+		let recordEnd = "/view/summary";
+		 
+		let recordURL = recordStart.concat(sid, recordEnd);
+		console.log(recordURL);
 	 
 	 </script>
   </head>
   <body>
-	  <p>Appian embedded POC - sid: <script document.write(sid)</script><p>
+	  <p>Appian embedded POC</script><p>
+	<p> id="so
     <!-- This custom HTML element specifies an Appian report to embed on the HTML page -->
     <appian-record-view recordTypeUrlStub="iZoJnQ" recordIdentifier="1" recordViewUrlStub="summary"></appian-record-view>
 
