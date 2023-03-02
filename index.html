@@ -3,7 +3,7 @@
   <head>
     <!-- This script loads the Appian Web components; change it to your Appian server's domain -->
      <script src="https://infinityglobal-dev.appiancloud.com/suite/tempo/ui/sail-client/embeddedBootstrap.nocache.js" id="appianEmbedded"></script>
-	 
+	 <div id="embeddedDiv"></div>
 	 <script>
 		const queryString = window.location.search;
 		console.log(queryString);
@@ -17,14 +17,22 @@
 		 
 		let recordURL = recordStart.concat(sid, recordEnd);
 		console.log(recordURL);
+		 
+		 var recordViewTag = document.createElement('appian-record-view');
+		 recordViewTag.setAttribute('recordTypeUrlStub', "QtRBJg");
+		 recordViewTag.setAttribute('recordIdentifier', sid);
+		 recordViewTag.setAttribute('recordViewUrlStub', "summary");
+		 
+		 container.appendChild(recordViewTag);
 	 
 	 </script>
   </head>
   <body>
-	  <p>Appian embedded POC</p>
-	<p> id="so </p>
+	<div id="embeddedDiv"></div>
+	<p>Appian embedded POC</p>
+	<p> </p>
     <!-- This custom HTML element specifies an Appian report to embed on the HTML page -->
-    <appian-record-view recordTypeUrlStub="QtRBJg" recordIdentifier=sid recordViewUrlStub="summary"></appian-record-view>
+    <!-- <appian-record-view recordTypeUrlStub="QtRBJg" recordIdentifier=sid recordViewUrlStub="summary"></appian-record-view> -->
 
   </body>
 </html>
