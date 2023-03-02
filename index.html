@@ -11,12 +11,13 @@
 		const urlParams = new URLSearchParams(queryString);
 		const sid = urlParams.get('sid')
 		console.log(sid);
-		console.log('test');
+		 
+		 document.getElementById("mysession").innerHTML = sid;
 	 
 	 </script>
   </head>
   <body>
-	<p>Appian embedded POC - sid<p>
+	  <p>Appian embedded POC - sid: <span id="session"></span><p>
     <!-- This custom HTML element specifies an Appian report to embed on the HTML page -->
     <appian-record-view recordTypeUrlStub="iZoJnQ" recordIdentifier="1" recordViewUrlStub="summary"></appian-record-view>
 
