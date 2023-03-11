@@ -48,7 +48,10 @@
 		{
 		method: `GET`,
 		credentials: `include`,
-		headers: { 'Content-Type': 'application/json', 'Appian-API-Key': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMGM1ZDFiZC02Y2ZiLTQ4YWItOTU4OS00NzIyMTk2MWVkMTYifQ.B7N7F1ooeTW48qZNauCAuUnzaGxYvLs0O8ONzDtyQnM' }
+		headers: { 'Content-Type': 'application/json'
+			  <!-- , -->
+			  <!-- 'Appian-API-Key': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMGM1ZDFiZC02Y2ZiLTQ4YWItOTU4OS00NzIyMTk2MWVkMTYifQ.B7N7F1ooeTW48qZNauCAuUnzaGxYvLs0O8ONzDtyQnM' -->
+			 }
 		}
 		).then((response) => response.json())
 		  .then((data) => console.log(data));
