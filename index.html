@@ -43,36 +43,8 @@
 		 
 	 
 	 </script>
-	  <script>
-		fetch("https://infinityglobal-dev.appiancloud.com/suite/webapi/punchout_order",
-		{
-		method: `GET`,
-		credentials: `include`,
-		headers: { 'Content-Type': 'application/json'
-			  <!-- , -->
-			  <!-- 'Appian-API-Key': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMGM1ZDFiZC02Y2ZiLTQ4YWItOTU4OS00NzIyMTk2MWVkMTYifQ.B7N7F1ooeTW48qZNauCAuUnzaGxYvLs0O8ONzDtyQnM' -->
-			 }
-		}
-		).then((response) => response.json())
-		  .then((data) => console.log(data));
-	</script>
-	  
-	  <form id="cxml_form" method="POST" action="https://infinityglobal-dev.appiancloud.com/suite/webapi/post_order" enctype="application/x-www-form-urlencoded">
-	  <input type="hidden" name="cXML-urlencoded" value="<PunchOutOrderMessageHeader operationAllowed="create">
-  <Total>
-    <Money currency="USD"></Money>
-  </Total>
-  <Shipping>
-    <Money currency="USD"></Money>
-    <Description xml:lang="en-US"></Description>
-  </Shipping>
-  <Tax>
-    <Money currency="USD"></Money>
-    <Description xml:lang="en-US"></Description>
-  </Tax>
-</PunchOutOrderMessageHeader>">
-	</form>
-	<!-- <script type="text/javascript">document.getElementById('cxml_form').submit()</script> -->
+
+
 
   </body>
 </html>
